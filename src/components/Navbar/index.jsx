@@ -89,7 +89,7 @@ export function StickyNavbar() {
                 size="sm"
                 className="hidden lg:inline-block"
               >
-                <span>Sign in</span>
+                <span>Tizimga kirish</span>
               </Button>
             </div>
             <IconButton
@@ -135,7 +135,7 @@ export function StickyNavbar() {
           {navList}
           <div className="flex items-center gap-x-1">
             <Button fullWidth variant="text" size="sm" className="">
-              <span>Log In</span>
+              <span>Tizimga kirish</span>
             </Button>
             <Button fullWidth variant="gradient" size="sm" className="">
               <span>Sign in</span>
