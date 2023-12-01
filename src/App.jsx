@@ -1,10 +1,10 @@
-import Navbar from "./components/Navbar"
+import { StickyNavbar } from "./components/Navbar"
 
 function App() {
 
   return (
     <>
-      <Navbar/>
+      <StickyNavbar/>
     </>
   )
 }
