@@ -1,8 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+.cont{
+    height: 50vh;
+    position: relative;
+}
 .hero{
     margin: 0 auto;
     width: 85%;
-    height: 40vh;
+    height: 30vh;
     background: url('https://www.jetsetter.com//uploads/sites/7/2018/04/s3KGCkrM.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px gray;
+    margin-bottom: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+}
+.hero-p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    text-align: center;
+}
+.filter{
+    width: 60%;
+    height: 230px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    top: 45px;
+    box-shadow: 0px 5px 15px gray;
+    display: flex;
 }

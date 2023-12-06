@@ -17,9 +17,9 @@ export function BookingCard() {
     
   
   return (
-    <>
+    <div className="">
       {/* Flat card */}
-      <Card className="w-full max-w-[26rem] shadow-lg">
+      <Card className="max-w-[26rem] shadow-lg">
         <CardHeader floated={false} color="blue-gray">
           <div className="">
             <Carousel
@@ -271,7 +271,7 @@ export function BookingCard() {
           </Button>
         </CardFooter>
       </Card>
-    </>
+    </div>
   );
 }
 export default BookingCard;
