@@ -1,35 +1,19 @@
-import { useEffect, useState } from "react";
-import { BuilderComponent, builder, useIsPreviewing } from "@builder.io/react";
+import { StickyNavbar } from "./components/Navbar"
+import Hero from "./components/Hero"
+import {BookingCard} from "./components/Card/Card"
 
-builder.init('f2f221044c6540cb91f4737222c30566');
+import Swipper from "./components/Swipper/Swipper";
 
-export default function CatchAllRoute() {
-  const isPreviewingInBuilder = useIsPreviewing();
-  const [notFound, setNotFound] = useState(false);
-  const [content, setContent] = useState(null);
+function App() {
 
-   useEffect(() => {
-    async function fetchContent() {
-      const content = await builder
-        .get("page", {
-          url: window.location.pathname
-        })
-        .promise();
-
-      setContent(content);
-      setNotFound(!content);
-      if (content?.data.title) {
-       document.title = content.data.title
-      }
-    }
-    fetchContent();
-  }, [window.location.pathname]);
-  if (notFound && !isPreviewingInBuilder) {
-    return <FourOhFour/>
-  }
   return (
     <>
-      <BuilderComponent model="page" content={content} />
+      <StickyNavbar/>
+      <Hero />
+      <BookingCard />
+      <Swipper />
     </>
-  );
+  )
 }
+
+export default App
