@@ -2,7 +2,7 @@ import { StickyNavbar } from "./components/Navbar"
 import Hero from "./components/Hero"
 import {BookingCard} from "./components/Card/Card"
 
-import { CarouselCustomArrows } from "./components/Carousel/carousel";
+import Swipper from "./components/Swipper/Swipper";
 
 function App() {
 
@@ -10,8 +10,8 @@ function App() {
     <>
       <StickyNavbar/>
       <Hero />
-      {/* <BookingCard /> */}
-      {/* <CarouselCustomArrows /> */}
+      <BookingCard />
+      <Swipper />
     </>
   )
 }
